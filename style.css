@@ -1,0 +1,883 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.nav-top{
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 93%;
+    padding: 0 40px;
+    margin-left: 6vmax;
+}
+.nav-top>img{
+    height: 40px;
+}
+.nav-left{
+    position: fixed;
+    height: 100vh;
+    width: 7%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-right:2px groove #000;
+      z-index: 99;
+}
+.nav-left i{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.nav-top button{
+    background-color: rgb(200, 0, 0);
+    font-weight: 700;
+    font-family: "Druk Heavy";
+    padding: 10px 16px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.nav-top button:hover{
+    background-color: rgb(132, 2, 2);
+}
+.main{
+    /* min-width: 100vw; */
+    min-height: 100vh;
+    /* background-color:rgb(241,238,229) ; */
+    overflow: hidden;
+
+}
+::-webkit-scrollbar{
+   display: none; 
+}
+
+.box1{
+    width: 100vw;
+    height: 90vh;
+    background-color:rgb(241,238,229) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottle1{
+    position: absolute;
+    top: 50%;
+    left: 51.5%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+.logoimg1{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    z-index: 100;
+    height: 0;
+}
+.nav-top>img::after{
+    content: "";
+    height: 100%;
+}
+.navtop> img::after :hover .logoimg1{
+    height: 100%;
+}
+.logoimg{
+    position: absolute;
+    top: 6%;
+    left: 31%;
+   transform: rotate(-35deg);
+   z-index: 99;
+}
+.box1 h1{
+    font-size: 15vw;
+    line-height: 13.5vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    
+    font-weight: 800;
+ 
+    z-index: 97;
+    background-color: rgb(0, 0, 0);
+}
+.box2{
+    width: 100vw;
+    height: 90vh;
+    background-color:rgb(241,238,229) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  
+}
+.b2left{
+    width: 40vw;
+    height: inherit;
+    margin-left: 1vmax;
+
+    
+}
+.b2left >h1{
+    font-size: 8vw;
+    line-height: 8vw;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 0;
+    font-weight: 800;
+    z-index: 97;
+    background-color: rgb(0, 0, 0);
+}
+.b2left >h5{
+    font-size: 1.8vmax;
+    font-weight: 600;
+    font-family: "nothing you could do";
+    margin: 10px 0;
+}
+.b2left >h2{
+    font-size: 1.6vmax;
+    font-weight: 300;
+    font-family: "anton";
+    margin: 10px 0;
+}
+.b2left >p{
+    width: 85%;
+    font-size: 1vmax;
+    font-weight: 550;
+    font-family: "nunito sans";
+    margin: 10px 0;
+}
+.b2left> button{
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: "anton";
+    padding: 8px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+transition: .2s all ease-in-out;
+}
+.b2left button:hover{
+background-color: rgb(132, 2, 2);
+}
+.b2right{
+    width: 40vw;
+    height: inherit;
+    
+}
+.b2box{
+margin-left: 150px;
+}
+.b2box>h3{
+    font-size: 3vw;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    z-index: 97;
+    background-color: rgb(11,114,173);
+   margin-left: 30px;
+}
+.b2box>h1{
+    font-size: 6vw;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    z-index: 97;
+    margin-top: -30PX;
+    background-color: rgb(11,114,173);
+}
+.b2box>h4{
+    font-size: 2.2vw;
+    width: 100%;
+    margin-top: -30PX;
+    margin-left: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    z-index: 97;
+    background-color: rgb(11,114,173);
+}
+.b2right> img{
+    margin: 100px 0 0 100px;
+}
+.box3{
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(241,238,229) ;
+    display: flex;
+  justify-content: center;
+   flex-direction: column;
+
+}
+.box3>h1{
+    font-size: 18vw;
+    width: 100%;
+    height: 50vh;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    font-weight: 800;
+    z-index: 97;
+    background-color: rgb(11,114,173);
+}
+.b3box{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+  justify-content: space-evenly;
+
+}
+.b3left{
+width: 50%;
+height: inherit;
+}
+.b3left >h3{
+    font-size: 1.5vmax;
+    font-weight: 600;
+    font-family: "nothing you could do";
+    margin: 10px 10px;
+}
+.b3left >iframe{
+    margin: 10px 10px;
+}
+.b3right{
+    width: 30%;
+height: inherit;
+}
+.b3right >p{
+    width: 85%;
+    font-size: 1vmax;
+    font-weight: 550;
+    font-family: "nunito sans";
+    margin: 20px 0;
+}
+.b3right >h2{
+    width: 80%;
+    font-size: 1.7vmax;
+    font-weight: 550;
+    font-family: "anton";
+    margin: 20px 0;
+}
+
+.box4{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(241,238,229) ;
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+.box4>h1{
+    font-size: 14vw;
+    width: 100%;
+    height: 50vh;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    font-weight: 800;
+    z-index: 97;
+    background-color: rgb(11,114,173);
+}
+.b4box{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+  justify-content: space-around;
+  
+
+}
+.b4left{
+    width: 30%;
+    height: inherit;
+    margin-left: 2.8vmax;
+    
+}
+.b4left>h4{
+    font: 400 1.5vmax "anton";
+    border-bottom: 1px solid gray;
+    margin-bottom: 4px;
+}
+.b4text1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid black;
+ padding-top: 10px;
+
+}
+.b4text1 h1{
+    font:400 3.5vmax "anton";
+}
+.b4text1 p{
+    font-size: 1vmax;
+    font-weight: 550;
+    font-family: "nunito sans";
+    margin-left:  50px;
+}
+.b4text1 span{
+    font:400 2vmax "anton";
+}
+.b4right{
+    width: 50%;
+    height: inherit;
+}
+.b4text2{
+    display: flex;
+    margin-left: 20vmax;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+  margin-bottom: 4px;
+}
+.b4text2 h4{
+    font-size: 1.5vmax;
+    font-weight: 600;
+    font-family: "nothing you could do";
+    margin: 10px 0;
+}
+.b4text3{
+    display: flex;
+    margin-left: 20vmax;
+    justify-content: space-between;
+    border-top: 3px solid rgb(5, 5, 5);
+    flex-direction: column;
+     cursor: pointer;
+}
+.b4text3 p{
+    font-size: 1vmax;
+    font-weight: 550;
+    font-family: "nunito sans";
+    margin-left:  36px;
+}
+.b4text3 h2{
+    font:400 2vmax "anton";
+}
+.box5{
+    width: 100vw;
+    height: 90vh;
+    background-color:rgb(241,238,229) ;
+    position: relative;
+}
+.a{
+    position: absolute;
+    top:-10% ;
+    left:6% ;
+}
+.b{
+    position: absolute;
+    top:18% ;
+    left:20% ;
+}
+.c{
+    position: absolute;
+    top:12% ;
+    left:70% ;
+}
+.a1{
+    width: 12%;
+    height: 20vh;
+    position: absolute;
+    top:-4% ;
+    left:12% ;
+    z-index: 99;
+}
+.b1{
+    width: 19%;
+    height: 20vh;
+    position: absolute;
+    top:24% ;
+    left:77% ;
+    z-index: 99;
+}
+.b1 >h2{
+    font: 300 1.5vmax "anton";
+    text-decoration: underline;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.c1 >h2,.a1 >h2
+{
+    font: 300 1.5vmax "anton";
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-align: center;
+}
+.b1 >p{
+    font: 300 1vmax "serrif";
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.c1 >p,.a1 >p
+{
+    text-align: center;
+    font: 300 1vmax "nonito sans";
+    letter-spacing: 1px;
+}
+.c1{
+    width: 13%;
+    height: 20vh;
+    position: absolute;
+    top:26% ;
+    left:26% ;
+    z-index: 99;
+}
+
+.box6{
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(241,238,229) ;
+    position: relative;
+}
+.d{
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    transform: rotate(-20deg);
+}
+.b6text{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+.b6text>h1{
+font: 300 5.5vmax "anton";
+letter-spacing: -5px;
+}
+.b6text>h5{
+    font-size: 1.8vmax;
+    font-weight: 600;
+    font-family: "nothing you could do";
+}
+.b6img{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    
+}
+.b6img1,.b6img2,.b6img3,.b6img4,.b6img5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.b6img1>img{
+ margin-left: 170px;
+}
+
+.b6img3>img{
+    display: none;
+}
+.b6img4>img{
+  margin-left: 240px;
+}
+.b6img3>img{
+    display: none;
+}
+.b6text1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 90%;
+    padding: 0 180px;
+}
+.b6text1 >h5{
+    font-weight: 200;
+    font-size: 1.2vmax;
+}
+.box7{
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(241,238,229) ;
+    position: relative;
+}
+.box7>h1{
+    font-size: 17vw;
+    width: 100%;
+    height: 50vh;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "anton";
+    background: url(texture.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+    z-index: 97;
+    background-color: rgb(11,114,173);
+}
+.back>img{
+margin-left: 35vmax;
+}
+.back{
+    width: 93%;
+    height: 80vh;
+    z-index: 99;
+    background: url(where-to-buy-overlay.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(11,114,173);
+    margin-left: 7vmax;
+    margin-right: 7vmax;
+    position: relative;
+    padding-top: 20px;
+    margin-top: -3%;
+}
+.back>button{
+  font: 300 1vmax "anton";
+  color: #fff;
+  background-color: #000;
+  padding: 10px 40px;
+  text-transform: uppercase;
+ cursor: pointer;
+ transition: .5s all ease-in-out;
+ position: absolute;
+ top: 55%;
+ left: 42%;
+ border: none;
+
+}
+
+.back>button:hover{
+    background-color: rgb(239, 28, 28);
+}
+.b7img{
+    margin-top: -15%;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    left:-50% ;
+}
+.box8{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(241,238,229) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.b8left{
+width: 70%;
+min-height: 50vh;
+height: inherit;
+background-color: blue;
+background-image: url(mic.jpg);
+background-position: center;
+background-size: cover;
+margin-left: 7vmax;
+}
+.b8right{
+    width: 40%;
+    height: inherit;
+    padding: 0 60px;
+}
+.b8right> h5{
+    font-size: 1.5vmax;
+    font-weight: 600;
+    font-family: "nothing you could do";
+    margin: 10px 0;
+}
+.b8right> h1{
+    font-size: 3.8vmax;
+    font-weight: 600;
+    font-family: "Merriweather";
+    margin: 10px 0;
+}
+.b8right> p{
+    font-size: 1vmax;
+    font-weight: 500;
+    font-family: "nunito sans";
+    margin: 10px 0;
+}
+.b8right> button{
+    font-size: 1vmax;
+    font-weight: 300;
+    font-family: "anton";
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    border: none;
+}
+.b8right button:hover{
+background-color: rgb(132, 2, 2);
+}
+.box9{
+  position: relative;
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(241,238,229) ;
+}
+.b9box{
+    padding-top: 10vmax;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    display: flex;
+}
+
+.b9one{
+    width: 30%;
+    height: inherit;
+    margin-left: 8vmax;
+}
+.b9one>h1{
+    font: 500 4vmax "merriweather";
+    line-height: 50px;
+}
+.b9one>h2{
+    font: 500 1vmax "anton";
+    border-bottom: 1.5px solid black;
+    width: 25%;
+}
+
+.b9two{
+    width: 40%;
+    height: inherit;
+}
+.b9two> h1{
+    font-size: 3vmax;
+    font-weight: 400;
+    font-family: "anton";
+    margin: 10px 0;
+}
+.b9two> p{
+    width: 55%;
+    font-size: 1vmax;
+    font-weight: 500;
+    font-family: "nunito sans";
+    margin: 10px 0;
+   
+}
+
+.b9bottom{
+    display: flex;
+    align-items: center;
+}
+.b9bottom> button{
+    font-size: 1vmax;
+    font-weight: 300;
+    font-family: "anton";
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    z-index: 99;
+    cursor: pointer;
+transition: .2s all ease-in-out;
+border: none;
+}
+
+.b9bottom button:hover{
+background-color: rgb(132, 2, 2);
+}
+.b9bottom> h2{
+    font-size: 1vmax;
+    font-weight: 400;
+    font-family: "anton";
+    margin: 10px 40px;
+    z-index: 99;
+    border-bottom: 2px solid black;
+}
+.b9bottom> h2:hover{
+    border-bottom: 2px solid black;
+    width: 0;
+    left: 0;
+}
+.box10{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(0, 0, 0) ;
+    position: relative;
+}
+.box10>img{
+margin-top: -15%;
+}
+.b10box{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+  
+    padding-left: 150px;
+}
+.b10a{
+    width: 20%;
+}
+.b10a >img{
+  cursor: pointer;
+}
+.b10b{
+    width: 30%;
+}
+.b10b>h1{
+    font: 400 4.5vmax "anton";
+    line-height: 65px;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s all ease-in-out;
+}
+.b10b>h1:hover{
+    color: rgba(229, 16, 16, 0.763);
+}
+.b10c{
+    width: 50%;
+    padding-left: 100px;
+}
+.b10c>h2{
+ font: 900 1.3vmax "nothing you could do";
+ color: #fff;
+}
+.b10c1{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 8vh;
+    width: 76%;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+.b10c1>input{
+    padding: 14px 150px 14px 0px;
+    border: none;
+}
+.b10c1>button{
+    font-size: 1vmax;
+    font-weight: 300;
+    font-family: "anton";
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    z-index: 99;
+    cursor: pointer;
+    border: none;
+    transition: 1s all ease-in-out;
+}
+.b10c1>button:hover{
+    background-color: rgba(229, 16, 16, 0.763);
+}
+.b10c>i{
+    width: 100%;
+    height: 8vh;
+    font-size: 2.2vmax;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+}
+.b10c>i:hover{
+    color: rgba(229, 16, 16, 0.763);
+}
+.b10last{
+    padding-left: 425px;
+    height: 20vh;
+    display: flex;
+}
+.b10left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 60%;
+}
+.b10left >p{
+    color: #fff;
+    font: 300 .8vmax "nunito";
+    text-decoration: underline;
+    transition: .4s all ease-in-out;
+    cursor: pointer;
+}
+.b10left >p:hover{
+    text-decoration: none;
+    color: rgba(229, 16, 16, 0.763);
+}
+.b10right{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.b10right >p{
+    color: #fff;
+    font: 300 .8vmax "nunito";
+}
